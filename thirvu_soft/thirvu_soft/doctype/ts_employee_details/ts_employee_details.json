@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ts_employee_name",
+ "creation": "2021-12-06 15:16:48.871272",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_employee_id",
+  "ts_employee_name",
+  "ts_employee_photo",
+  "ts_designation",
+  "ts_date_of_joining",
+  "ts_address",
+  "ts_qualification",
+  "ts_phone_number",
+  "ts_mail_id",
+  "ts_gender",
+  "ts_blood_group",
+  "ts_date_of_birth"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "ts_employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "ts_employee_photo",
+   "fieldtype": "Attach Image",
+   "label": "Employee Photo"
+  },
+  {
+   "fieldname": "ts_designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "ts_address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "ts_qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "ts_phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "ts_mail_id",
+   "fieldtype": "Data",
+   "label": "Mail ID"
+  },
+  {
+   "fieldname": "ts_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "ts_blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-"
+  },
+  {
+   "fieldname": "ts_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "ts_date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of joining"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-06 15:30:21.002165",
+ "modified_by": "Administrator",
+ "module": "Thirvu Soft",
+ "name": "TS Employee Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

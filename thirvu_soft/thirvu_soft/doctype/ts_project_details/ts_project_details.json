@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": " field:ts_project_name",
+ "creation": "2021-12-06 16:03:11.305772",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_project_name",
+  "ts_project_team",
+  "ts_project_start_date",
+  "ts_estimated_end_date",
+  "ts_project_end_date",
+  "ts_project_domain",
+  "ts_project_estimation",
+  "ts_customer_name",
+  "ts_customer_id",
+  "ts_customer_address",
+  "ts_customer_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_project_name",
+   "fieldtype": "Data",
+   "label": "Project name"
+  },
+  {
+   "fieldname": "ts_project_team",
+   "fieldtype": "Data",
+   "label": "Project team"
+  },
+  {
+   "fieldname": "ts_project_start_date",
+   "fieldtype": "Date",
+   "label": "Project start date"
+  },
+  {
+   "fieldname": "ts_estimated_end_date",
+   "fieldtype": "Date",
+   "label": "Estimated end date"
+  },
+  {
+   "fieldname": "ts_project_end_date",
+   "fieldtype": "Date",
+   "label": " project end date"
+  },
+  {
+   "fieldname": "ts_project_domain",
+   "fieldtype": "Data",
+   "label": "project domain"
+  },
+  {
+   "fieldname": "ts_customer_name",
+   "fieldtype": "Data",
+   "label": "customer  name"
+  },
+  {
+   "fieldname": "ts_customer_id",
+   "fieldtype": "Int",
+   "label": "customer id"
+  },
+  {
+   "fieldname": "ts_customer_address",
+   "fieldtype": "Data",
+   "label": "customer address"
+  },
+  {
+   "fieldname": "ts_customer_email",
+   "fieldtype": "Data",
+   "label": "customer email"
+  },
+  {
+   "fieldname": "ts_project_estimation",
+   "fieldtype": "Currency",
+   "label": "project estimation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-06 16:30:52.378683",
+ "modified_by": "Administrator",
+ "module": "Thirvu Soft",
+ "name": "TS project details",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

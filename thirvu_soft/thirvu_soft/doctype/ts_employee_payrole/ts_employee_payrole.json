@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ts_employee_name",
+ "creation": "2021-12-16 10:43:29.477309",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_employee_id",
+  "ts_employee_name",
+  "ts_startdate",
+  "ts_enddate",
+  "ts_totaldays",
+  "ts_employee_designation",
+  "ts_pf",
+  "ts_hra",
+  "ts_basicpay"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_employee_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Employee id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ts_employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee name ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "ts_startdate",
+   "fieldtype": "Date",
+   "label": "Work start date"
+  },
+  {
+   "fieldname": "ts_enddate",
+   "fieldtype": "Date",
+   "label": "Work end date"
+  },
+  {
+   "fieldname": "ts_employee_designation",
+   "fieldtype": "Select",
+   "label": "Employee Designation",
+   "options": "Team member\nTeam lead\nTech lead\nHouse keeping"
+  },
+  {
+   "fieldname": "ts_pf",
+   "fieldtype": "Data",
+   "label": "PF"
+  },
+  {
+   "fieldname": "ts_basicpay",
+   "fieldtype": "Currency",
+   "label": "Basic pay"
+  },
+  {
+   "fieldname": "ts_totaldays",
+   "fieldtype": "Int",
+   "label": "Total days"
+  },
+  {
+   "fieldname": "ts_hra",
+   "fieldtype": "Data",
+   "label": "HRA"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-16 14:51:57.218443",
+ "modified_by": "Administrator",
+ "module": "Thirvu Soft",
+ "name": "Ts Employee_payrole",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
