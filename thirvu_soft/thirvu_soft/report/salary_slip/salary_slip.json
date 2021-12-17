@@ -8,22 +8,36 @@
  "doctype": "Report",
  "filters": [
   {
-   "fieldname": "ts_employee_id",
+   "fieldname": "employeeid",
    "fieldtype": "Int",
    "label": "Employee id",
-   "mandatory": 0,
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "startdate",
+   "fieldtype": "Date",
+   "label": "Start date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "enddate",
+   "fieldtype": "Date",
+   "label": "End date",
+   "mandatory": 1,
    "wildcard_filter": 0
   }
  ],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2021-12-16 13:11:23.161635",
+ "modified": "2021-12-17 12:02:23.532852",
  "modified_by": "Administrator",
  "module": "Thirvu Soft",
  "name": "Salary Slip",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "select ts_employee_id,\nts_employee_name,\nts_totaldays,\nts_basicpay-ts_pf-ts_hra as ts_Net_pay\nfrom `tabTs Employee_payrole`\nwhere ts_totaldays >=25",
+ "query": "select ts_employee_id,\nts_employee_name,\nts_totaldays,\nts_basicpay-ts_pf-ts_hra as ts_Net_pay\nfrom `tabTs Employee_payrole`\nwhere  ts_employee_id > %(employeeid)s or ts_startdate > %(startdate)s or ts_enddate > %(enddate)s                   ",
  "ref_doctype": "Ts Employee_payrole",
  "report_name": "Salary Slip",
  "report_type": "Query Report",
